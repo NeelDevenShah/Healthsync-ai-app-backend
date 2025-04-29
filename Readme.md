@@ -59,62 +59,147 @@ yarn build
 yarn start
 ```
 
-## API Documentation
+# HealthSync.ai
 
-The API endpoints are organized into the following categories:
+**HealthSync.ai** is a next-generation healthcare platform designed to drastically reduce administrative workload and streamline diagnostic workflows for both doctors and patients. Developed by **Team ML Mavericks**, this AI-driven application empowers medical professionals and patients by automating and optimizing the diagnostic and reporting process.
 
-- **Auth**: User registration, login, and authentication
-- **Users**: User profile management
-- **Health Data**: Storage and retrieval of health metrics
-- **AI Insights**: AI-powered health recommendations and insights
+---
 
-### Base URL
+## 🧠 Problem Statement
 
-```
-http://localhost:3000/api
-```
+Healthcare professionals are overwhelmed by administrative burdens and inefficient workflows. The current diagnostic journey involves:
 
-### Authentication
+- Multiple patient visits (consultation, test ordering, and result reviews).
+- Delays in treatment decisions.
+- Excessive time spent on non-critical tasks.
 
-Most endpoints require authentication via JWT token. Include the token in your request headers:
+---
 
-```
-Authorization: Bearer YOUR_JWT_TOKEN
-```
+## ✅ Our Solution
 
-## Testing
+**HealthSync.ai** reimagines the diagnostic workflow using AI-powered automation.
 
-Run the test suite with:
+### Patient Benefits
 
-```bash
-npm test
-# or with yarn
-yarn test
-```
+- ⏱️ **50% Time Saved**: Streamlined pre-appointment diagnostic workflows.
+- 🧠 **Intelligent Test Recommendations**: AI suggests appropriate diagnostic tests.
+- 📋 **Comprehensive Pre-Analysis**: Patients receive initial results before seeing the doctor.
 
-## Docker Support
+### Doctor Advantages
 
-Build and run with Docker:
+- ⚡ **40% Efficiency Increase**: Enhanced consultation speed.
+- 📄 **Automated Summaries**: AI-generated summaries of patient data and diagnostics.
+- 🏥 **Focus on Critical Care**: Less time on paperwork, more on patients.
 
-```bash
-docker build -t healthsync-backend .
-docker run -p 3000:3000 --env-file .env healthsync-backend
-```
+---
 
-## Troubleshooting
+## 🚀 Key Outcomes
 
-- **Connection Issues**: Ensure MongoDB is running and the connection string is correct
-- **Authentication Errors**: Verify JWT_SECRET is properly set
-- **AI Feature Failures**: Check that your OpenAI API key is valid and has sufficient credits
+- Faster, smarter healthcare delivery.
+- Maximized professional productivity.
+- Enhanced patient satisfaction and treatment outcomes.
 
-## License
+---
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 🧩 App Modules
 
-## Contributing
+The app is divided into two main portals:
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Commit changes: `git commit -m 'Add feature'`
-4. Push to branch: `git push origin feature-name`
-5. Submit a pull request
+### 1. **Patient Portal**
+
+- Upload reports and input symptoms.
+- Receive AI-generated diagnosis.
+- Review suggested tests and book appointments.
+
+**Screenshots to add:**
+
+- Patient dashboard
+- Report upload screen
+- AI diagnosis result
+
+### 2. **Doctor Portal**
+
+- Review patient history and test results.
+- Approve/modify AI diagnosis.
+- Schedule appointments and recommend follow-ups.
+
+**Screenshots to add:**
+
+- Doctor login dashboard
+- Patient diagnosis summary
+- Report recommendation approval
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer          | Technology   |
+| -------------- | ------------ |
+| Frontend       | React Native |
+| Backend        | Node.js      |
+| File Uploads   | Multer       |
+| AI Integration | Gemini API   |
+
+---
+
+## 🔄 Diagnostic Workflow
+
+1. **Patient Uploads Medical History**
+   - Symptoms, prior reports, etc.
+2. **AI Suggests Diagnostic Reports**
+   - Smart recommendations powered by Gemini API.
+3. **Doctor Reviews and Approves**
+   - Doctors can accept or adjust AI suggestions.
+4. **Schedule Appointments**
+   - Based on test results and urgency.
+
+---
+
+## 🔭 Future Roadmap
+
+### 🔬 Advanced Patient Monitoring
+
+- Chronic disease tracking (Diabetes, Hypertension, IHD)
+
+### 🛎️ Smart Notification System
+
+- Medicine reminders, health check alerts
+
+### 🔗 IoT Device Integration
+
+- Real-time tracking of:
+  - Heart rate
+  - Blood oxygen saturation
+  - Movement patterns
+
+---
+
+## 🧑‍💻 Team
+
+**Team ML Mavericks**  
+Passionate about solving real-world healthcare problems using AI and software innovation.
+
+1. Neel Shah (neeldevenshah.ai@gmail.com)
+1. Pankil Soni (pmsoni2016@gmail.com)
+1. Sneh Shah (snehs5483@gmail.com)
+
+---
+
+## Acknowledgments
+
+- Administrative Burden Survey – Office of Regulatory Affairs and Service Effectiveness, Nova Scotia, 2020
+- Gemini API by Google (used for AI diagnosis)
+
+---
+
+## 📂 Repository Information
+
+This is the **frontend repository** for HealthSync.ai.
+
+For the backend repository, visit: [https://github.com/NeelDevenShah/Healthsync-ai-app-backend](https://github.com/NeelDevenShah/Healthsync-ai-app-backend)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) file for details.
